@@ -33,7 +33,17 @@ public class MyFrame extends JFrame
         frame.paintLine();
         
         MyFrame frame1 = new MyFrame("Rectangle");
-        frame.paintRectangle();
+        frame1.paintRectangle();
+        
+        MyFrame frame2 = new MyFrame("Oval");
+        frame2.paintOval();
+    }
+
+    private void paintOval()
+    {
+        panel = new OvalDemoPanel();
+        add(panel);
+        setVisible(true);
     }
 
     private void paintRectangle()

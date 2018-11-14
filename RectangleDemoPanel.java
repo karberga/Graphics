@@ -28,6 +28,6 @@ public class RectangleDemoPanel extends MyPanel
         endY += 30;
         
         g.setColor(Color.RED);
-        g.drawRect(startX, startY, endX, endY);
+        g.fillRect(startX, startY, endX, endY);
     }
 }
